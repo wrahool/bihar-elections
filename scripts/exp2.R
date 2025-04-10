@@ -4,6 +4,7 @@ library(MatchIt)
 library(cobalt)
 library(modelsummary)
 library(tidymodels)
+library(effsize)
 
 rescale0to1 <- function(x) {
   (x - min(x)) / (max(x) - min(x))
