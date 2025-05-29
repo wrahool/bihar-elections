@@ -309,3 +309,115 @@ results <- results |>
          holm_sig = ifelse(Holm_p < 0.05, "*", ""),
          BH_sig = ifelse(BH_p < 0.05, "*", ""),
          Bonferroni_sig = ifelse(Bonferroni_p < 0.05, "*", ""))
+
+# Moderation based on who they voted for
+# VotedLokSabha2019, VotedAssembly2015 = 1 for NDA, 2 for MGB  
+
+matched_LSsubset <- matched |>
+  filter(VotedLokSabha2019 %in% c(1, 2))  |>
+  mutate(VotedLokSabha2019 = factor(VotedLokSabha2019, levels = c(1, 2), labels = c("NDA", "MGB")))
+
+matched_LAsubset <- matched |>
+  filter(VotedAssembly2015 %in% c(1,2)) |>
+  mutate(VotedAssembly2015 = factor(VotedAssembly2015, levels = c(1, 2), labels = c("NDA", "MGB")))
+
+# Moderation by voting in Lok Sabha 2019
+lm(total_participation ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |> 
+  summary()
+lm(NDA_participation ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(UPA_participation ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |> 
+  summary()
+
+lm(total_recirculated ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(RecirculatedNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(RecirculatedUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+
+lm(total_created ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(CreatedNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(CreatedUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+
+lm(total_commented ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(CommentedNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(CommentedUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+
+lm(total_posted ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(PostedNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(PostedUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+
+lm(total_rallies ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(RalliesNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(RalliesUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+
+lm(total_meetings ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(MeetingsNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+lm(MeetingsUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset) |>
+  summary()
+
+# Moderation by voting in Assembly 2015
+lm(total_participation ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |> 
+  summary()
+lm(NDA_participation ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(UPA_participation ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+
+lm(total_recirculated ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(RecirculatedNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(RecirculatedUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+
+lm(total_created ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(CreatedNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(CreatedUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+
+lm(total_commented ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(CommentedNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(CommentedUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+
+lm(total_posted ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(PostedNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(PostedUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+
+lm(total_rallies ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(RalliesNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(RalliesUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+
+lm(total_meetings ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(MeetingsNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+lm(MeetingsUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset) |>
+  summary()
+
