@@ -178,14 +178,14 @@ match_model1 <- matchit(formula,
                        data = merged_dat, 
                        method = "optimal", distance = "logit")
 
-plot(summary(match_model1))
-
 match_model2 <- matchit(formula, 
                        data = merged_dat, 
                        method = "cardinality")
 
 # balance plot
+svg("figures/balance_plot2.svg", width = 8, height = 8)
 plot(summary(match_model2))
+dev.off()
 
 summary(match_model1)
 
