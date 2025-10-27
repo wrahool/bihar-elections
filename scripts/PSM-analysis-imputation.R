@@ -335,21 +335,21 @@ run_t_test <- function(var) {
 }
 
 # List of all variables you tested
-# variables <- c("total_participation", "NDA_participation", "UPA_participation",
-#                "total_recirculated", "RecirculatedNDA", "RecirculatedUPA",
-#                "total_created", "CreatedNDA", "CreatedUPA",
-#                "total_commented", "CommentedNDA", "CommentedUPA",
-#                "total_posted", "PostedNDA", "PostedUPA",
-#                "total_rallies", "RalliesNDA", "RalliesUPA",
-#                "total_meetings", "MeetingsNDA", "MeetingsUPA")
+variables <- c("total_participation", "NDA_participation", "UPA_participation",
+               "total_recirculated", "RecirculatedNDA", "RecirculatedUPA",
+               "total_created", "CreatedNDA", "CreatedUPA",
+               "total_commented", "CommentedNDA", "CommentedUPA",
+               "total_posted", "PostedNDA", "PostedUPA",
+               "total_rallies", "RalliesNDA", "RalliesUPA",
+               "total_meetings", "MeetingsNDA", "MeetingsUPA")
 
-variables <- c("NDA_participation", "UPA_participation",
-               "RecirculatedNDA", "RecirculatedUPA",
-               "CreatedNDA", "CreatedUPA",
-               "CommentedNDA", "CommentedUPA",
-               "PostedNDA", "PostedUPA",
-               "RalliesNDA", "RalliesUPA",
-               "MeetingsNDA", "MeetingsUPA")
+# variables <- c("NDA_participation", "UPA_participation",
+#                "RecirculatedNDA", "RecirculatedUPA",
+#                "CreatedNDA", "CreatedUPA",
+#                "CommentedNDA", "CommentedUPA",
+#                "PostedNDA", "PostedUPA",
+#                "RalliesNDA", "RalliesUPA",
+#                "MeetingsNDA", "MeetingsUPA")
 
 # Run all t-tests and store results
 results_matrix <- sapply(variables, run_t_test)
