@@ -142,8 +142,8 @@
 <polyline points='30.98,24.00 33.72,24.00 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='81.94,116.94 81.94,114.20 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='162.30,116.94 162.30,114.20 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='81.94' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='72.33px' lengthAdjust='spacingAndGlyphs'>in support for NDA</text>
-<text x='162.30' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='73.78px' lengthAdjust='spacingAndGlyphs'>in support for MGB</text>
+<text x='81.94' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='69.41px' lengthAdjust='spacingAndGlyphs'>in support of NDA</text>
+<text x='162.30' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='70.86px' lengthAdjust='spacingAndGlyphs'>in support of MGB</text>
 <text transform='translate(18.84,62.58) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='91.75px' lengthAdjust='spacingAndGlyphs'>Mean Recirculated</text>
 </g>
 <defs>
@@ -191,8 +191,8 @@
 <polyline points='241.50,21.66 244.24,21.66 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='292.46,116.94 292.46,114.20 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='372.82,116.94 372.82,114.20 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='292.46' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='72.33px' lengthAdjust='spacingAndGlyphs'>in support for NDA</text>
-<text x='372.82' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='73.78px' lengthAdjust='spacingAndGlyphs'>in support for MGB</text>
+<text x='292.46' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='69.41px' lengthAdjust='spacingAndGlyphs'>in support of NDA</text>
+<text x='372.82' y='125.43' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='70.86px' lengthAdjust='spacingAndGlyphs'>in support of MGB</text>
 <text transform='translate(229.36,62.58) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='69.75px' lengthAdjust='spacingAndGlyphs'>Mean Created</text>
 </g>
 <defs>
@@ -240,8 +240,8 @@
 <polyline points='30.98,148.08 33.72,148.08 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='81.94,244.22 81.94,241.48 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='162.30,244.22 162.30,241.48 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='81.94' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='72.33px' lengthAdjust='spacingAndGlyphs'>in support for NDA</text>
-<text x='162.30' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='73.78px' lengthAdjust='spacingAndGlyphs'>in support for MGB</text>
+<text x='81.94' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='69.41px' lengthAdjust='spacingAndGlyphs'>in support of NDA</text>
+<text x='162.30' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='70.86px' lengthAdjust='spacingAndGlyphs'>in support of MGB</text>
 <text transform='translate(18.84,189.86) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='90.53px' lengthAdjust='spacingAndGlyphs'>Mean Commented</text>
 </g>
 <defs>
@@ -289,8 +289,8 @@
 <polyline points='241.50,145.55 244.24,145.55 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='292.46,244.22 292.46,241.48 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='372.82,244.22 372.82,241.48 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='292.46' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='72.33px' lengthAdjust='spacingAndGlyphs'>in support for NDA</text>
-<text x='372.82' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='73.78px' lengthAdjust='spacingAndGlyphs'>in support for MGB</text>
+<text x='292.46' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='69.41px' lengthAdjust='spacingAndGlyphs'>in support of NDA</text>
+<text x='372.82' y='252.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='70.86px' lengthAdjust='spacingAndGlyphs'>in support of MGB</text>
 <text transform='translate(229.36,189.86) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='64.88px' lengthAdjust='spacingAndGlyphs'>Mean Posted</text>
 </g>
 <defs>
@@ -338,8 +338,8 @@
 <polyline points='30.98,271.93 33.72,271.93 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='81.94,371.50 81.94,368.76 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='162.30,371.50 162.30,368.76 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='81.94' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='72.33px' lengthAdjust='spacingAndGlyphs'>in support for NDA</text>
-<text x='162.30' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='73.78px' lengthAdjust='spacingAndGlyphs'>in support for MGB</text>
+<text x='81.94' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='69.41px' lengthAdjust='spacingAndGlyphs'>in support of NDA</text>
+<text x='162.30' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='70.86px' lengthAdjust='spacingAndGlyphs'>in support of MGB</text>
 <text transform='translate(18.84,317.14) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='63.59px' lengthAdjust='spacingAndGlyphs'>Mean Rallies</text>
 </g>
 <defs>
@@ -387,8 +387,8 @@
 <polyline points='241.50,274.41 244.24,274.41 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='292.46,371.50 292.46,368.76 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='372.82,371.50 372.82,368.76 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='292.46' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='72.33px' lengthAdjust='spacingAndGlyphs'>in support for NDA</text>
-<text x='372.82' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='73.78px' lengthAdjust='spacingAndGlyphs'>in support for MGB</text>
+<text x='292.46' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='69.41px' lengthAdjust='spacingAndGlyphs'>in support of NDA</text>
+<text x='372.82' y='379.99' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='70.86px' lengthAdjust='spacingAndGlyphs'>in support of MGB</text>
 <text transform='translate(229.36,317.14) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='75.25px' lengthAdjust='spacingAndGlyphs'>Mean Meetings</text>
 <rect x='131.97' y='392.80' width='190.81' height='28.24' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
 <text x='137.45' y='410.86' style='font-size: 11.00px; font-family: "Arial";' textLength='42.22px' lengthAdjust='spacingAndGlyphs'>Flooding</text>

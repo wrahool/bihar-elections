@@ -35,7 +35,7 @@ plot_recirculated <- function(data, base_var) {
       fill = "Flooding"
     ) +
     theme_bw() +
-    scale_x_discrete(labels = c("NDA" = "NDA", "UPA" = "MGB")) +
+    scale_x_discrete(labels = c("NDA" = "in support of NDA", "UPA" = "in support of MGB")) +
     scale_fill_manual(values = c("0" = "#1f78b4", "1" = "#b2df8a"),
                       labels = c("0" = "No Flooding", "1" = "Flooding"))
 }
@@ -52,6 +52,6 @@ final_plot
 
 ggsave("figures/descriptives.svg",
        plot = final_plot,
-       width = 10,
-       height = 12,
-       dpi = 300)
+       width = 6,
+       height = 6,
+       dpi = 300, device = "svg")
