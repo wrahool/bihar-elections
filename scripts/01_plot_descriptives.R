@@ -1,7 +1,7 @@
 library(tidyverse)
 library(patchwork)
 
-plot_recirculated <- function(data, base_var) {
+plot_dv <- function(data, base_var) {
   var1 <- paste0(base_var, "NDA")
   var2 <- paste0(base_var, "UPA")
   
@@ -42,7 +42,7 @@ plot_recirculated <- function(data, base_var) {
 
 vars <- c("Recirculated", "Created", "Commented", "Posted", "Rallies", "Meetings")
 
-plots <- lapply(vars, function(v) plot_recirculated(merged_dat, v))
+plots <- lapply(vars, function(v) plot_dv(merged_dat, v))
 
 # Arrange in a grid, 2 per row, with a single shared legend
 final_plot <- wrap_plots(plots, ncol = 2, guides = "collect") &
