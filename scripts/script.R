@@ -6,7 +6,6 @@ library(modelsummary)
 library(tidymodels)
 library(effsize)
 library(pandoc)
-library(jsonlite)
 library(patchwork)
 
 rescale0to1 <- function(x) {
@@ -14,11 +13,9 @@ rescale0to1 <- function(x) {
   (x - rng[1]) / (rng[2] - rng[1])
 }
 
-params <- fromJSON("params/params.json")
+data_folder <- ".//data//"
 
-data_folder <- params$data_folder
-
-survey_dat <- read_csv(glue('{data_folder}//clean-survey-data-revised.csv'))
+survey_dat <- read_csv(glue('{data_folder}//clean-survey-data.csv'))
 survey_colnames <- read_csv(glue('{data_folder}//survey-column-names.csv'))
 
 names(survey_dat) <- survey_colnames$RenamedColumn

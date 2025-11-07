@@ -1,0 +1,151 @@
+OriginalColumn,RenamedColumn
+S.No.,N
+QB1. Name of the constituency,Constituency
+QB5A. Date ,Date
+QB5A. Time,Time
+QB5B. Place of Interview ,InterviewLocation
+QC1. Would you be willing to be contacted through mobile/e-mail for future research?,FutureContact
+QC1A. Respondent’s Age,Age
+QC3C. . Sex of the respondent,Sex
+QD. Please check that respondent’s mobile no. is working,PhoneWorks
+"QD1A. In your view, how are things going in the state right now?",StateStatus
+QD1B. Do you think the state is generally,StateHeaded
+Q2A. Now I’d like to ask you about how satisfied you are with the performance of the current national and state governments to date. a. Central Government,CentralGovtPerformance
+Q2B. Now I’d like to ask you about how satisfied you are with the performance of the current national and state governments to date. b. State Government,StateGovtPerformance
+Q3A. Which party did you vote for in the last LokSabha election (2019)?  ,VotedLokSabha2019
+Q3B. Which party did you vote for in the last Assembly election (2015)?,VotedAssembly2015
+"Q4A. As far as you're concerned, what is the SINGLE MOST important problemyou are facing at the present time?",ImportantProblem
+Q4B. Whatlevel of government has the main responsibility for the most important problem you are facing?,GovtResponsibleProblem
+Q4C. Which political party/coalition do you think would be best at dealing with the most important problem you are facing?,PartySolveProblem
+Q5. Now let us talk about the campaign for the Assembly elections. How interested are you in the campaign,CampaignInterest
+Q6. Have you ever used a mobile phone to.,UsedPhone
+Q6A. to text/SMS,UsedPhoneSMS
+Q6B. to check emails,UsedPhoneEmail
+Q6C. to access social media websites,UsedPhoneSocialMedia
+Q6D. to watch video,UsedPhoneVideo
+Q6E. to browse news sites,UsedPhoneNewsSites
+Q6F. find information related to your work,UsedPhoneInformation
+Q6G. for education material,UsedPhoneEducation
+Q6H. WhatsApp,UsedPhoneWhatssapp
+Q7A. Social media/NDA,SocialMediaContactNDA
+Q7A. Social media/UPA,SocialMediaContactUPA
+Q7A. Social media/LJP,SocialMediaContactLJP
+ Q7A. Social media/Others,SocialMediaContactOthers
+Q7A. Social media/Independent,SocialMediaContactInd
+ Q7B. Telephone Mobile/NDA,PhoneContactNDA
+ Q7B. Telephone Mobile/UPA,PhoneContactUPA
+ Q7C. Telephone Mobile/LJP,PhoneContactLJP
+ Q7B. Telephone Mobile/Others,PhoneContactOthers
+ Q7B. Telephone Mobile/Independent,PhoneContactInd
+ Q7C. SMS on mobile/NDA,SMSContactNDA
+ Q7C. SMS on mobile/UPA,SMSContactUPA
+ Q7C. SMS on mobile/LJP,SMSContactLJP
+ Q7C. SMS on mobile/Others,SMSContactOthers
+ Q7C. SMS on mobile/Independent,SMSContactIndependent
+ Q7D. WhatsApp/NDA,WhatsappContactNDA
+ Q7D. WhatsApp/UPA,WhatsappContactUPA
+ Q7D. WhatsApp/LJP,WhatsappContactLJP
+ Q7D. WhatsApp/Others,WhatsappContactOthers
+ Q7D. WhatsApp/Independent,WhatsappContactIndependent
+ Q7E. Face to Face at home/NDA,F2FHomeContactNDA
+ Q7E. Face to Face at home/UPA,F2FHomeContactUPA
+ Q7E. Face to Face at home/LJP,F2FHomeContactLJP
+ Q7E. Face to Face at home/Others,F2FHomeContactOthers
+ Q7E. Face to Face at home/Independent,F2FHomeContactIndependent
+ Q7F. Face to Face street/NDA,F2FStreetContactNDA
+ Q7F. Face to Face street/UPA,F2FStreetContactUPA
+ Q7F. Face to Face street/LJP,F2FStreetContactLJP
+ Q7F. Face to Face street/Others,F2FStreetContactOthers
+ Q7F. Face to Face street/Independent,F2FStreetContactIndependent
+ Q7G. Road show/Pad yatra/NDA,RoadshowContactBJP
+ Q7G. Road show/Pad yatra/UPA,RoadshowContactUPA
+ Q7G. Road show/Pad yatra/LJP,RoadshowContactLJP
+ Q7G. Road show/Pad yatra/Others,RoadshowContactOthers
+ Q7G. Road show/Pad yatra/Independent,RoadshowContactInd
+ Q7H. E-mail/NDA,EmailContactNDA
+ Q7H. E-mail/UPA,EmailContactUPA
+ Q7H. E-mail/LJP,EmailContactLJP
+ Q7H. E-mail/Others,EmailContactOthers
+ Q7H. E-maill/Independent,EmailContactInd
+Q8A. Newspapers (including newspaper websites),NewsConsumptionNewspapers
+Q8B. Television,NewsConsumptionTV
+Q8C. Radio,NewsConsumptionRadio
+Q8D. SMS/MMS on mobile phone,NewsConsumptionSMS
+Q8E. Social media,NewsConsumptionSocialMedia
+Q8F. WhatsApp,NewsConsumptionWhatsapp
+Q8G. Campaign emails,NewsConsumptionCampaignEmails
+Q8H. Pamphlets,NewsConsumptionPamphlets
+Q8I. Posters/billboards in the street,NewsConsumptionPosters
+Q8J. In person(face-to-face),NewsConsumptionF2F
+Q8K. Internet,NewsConsumptionInternet
+Q8L. YouTube,NewsConsumptionYoutube
+Q8M. Phone call,NewsConsumptionPhonecall
+8N. Conversation with family and friends,NewsConsumptionFamily
+Q9. How often did you share news and information with your family and friends about the assembly elections via the sources below A. Social Media,NewsSharingSocialMedia
+Q9. How often did you share news and information with your family and friends about the assembly elections via the sources below B. SMS/MMS on mobile phone,NewsSharingSMS
+Q9. How often did you share news and information with your family and friends about the assembly elections via the sources below C. WhatsApp,NewsSharingWhatsapp
+Q9. How often did you share news and information with your family and friends about the assembly elections via the sources below D. E-mail,NewsSharingEmail
+Q9. How often did you share news and information with your family and friends about the assembly elections via the sources below E. In person(face-to-face),NewsSharingF2F
+Q10. Now I would like to ask you about how much attention you pay to news about politics in the media,AttentiontoNews
+"Q11. In their election campaigns political parties can focus on negative attacks on other parties, or they can focus on putting forward their own policies and personalities",BJPNegativeCampaign
+Q12A. Recirculated online politi/NDA,RecirculatedNDA
+Q12A. Recirculated online politi/UPA,RecirculatedUPA
+Q12A. Recirculated online politi/LJP,RecirculatedLJP
+Q12A. Recirculated online politi/Others,RecirculatedOthers
+Q12A. Recirculated online politi/Independent,RecirculatedInd
+Q12B. Created and circulated original political content/NDA,CreatedNDA
+Q12B. Created and circulated original political content/UPA,CreatedUPA
+Q12B. Created and circulated original political content/LJP,CreatedLJP
+Q12B. Created and circulated original political content/Others,CreatedOthers
+Q12B. Created and circulated original political content/Independent,CreatedInd
+Q12C. Commented online about political content/NDA,CommentedNDA
+Q12C. Commented online about political content/UPA,CommentedUPA
+Q12C. Commented online about political content/LJP,CommentedLJP
+Q12C. Commented online about political content/Others,CommentedOthers
+Q12C. Commented online about political content/Independent,CommentedInd
+Q12D. Posted status updates or sent electronic messages about politics/NDA,PostedNDA
+Q12D. Posted status updates or sent electronic messages about politics/UPA,PostedUPA
+Q12D. Posted status updates or sent electronic messages about politics/LJP,PostedLJP
+Q12D. Posted status updates or sent electronic messages about politics/Others,PostedOthers
+Q12D. Posted status updates or sent electronic messages about politics/Independent,PostedInd
+Q12E. Attended virtual political rallies/NDA,RalliesNDA
+Q12E. Attended virtual political rallies/UPA,RalliesUPA
+Q12E. Attended virtual political rallies/LJP,RalliesLJP
+Q12E. Attended virtual political rallies/Others,RalliesOthers
+Q12E. Attended virtual political rallies/Independent,RalliesInd
+Q12F. Attended neighbourhood meetings/canvassing/NDA,MeetingsNDA
+Q12F. Attended neighbourhood meetings/canvassing/UPA,MeetingsUPA
+Q12F. Attended neighbourhood meetings/canvassing/LJP,MeetingsLJP
+Q12F. Attended neighbourhood meetings/canvassing/Others,MeetingsOthers
+Q12F. Attended neighbourhood meetings/canvassing/Independent,MeetingsInd
+Q13. A. Building Ram Temple on the Babri Masjid site,BJPPolicyRamTemple
+Q13.  B. The Citizen (Amendment) Act,BJPPolicyCAA
+Q13. C. The 10% additional reservation for economically backward classes,BJPPolicyReservation
+Q13. D. GauRaksha,BJPPolicyGauRaksha
+Q13.  E. Banning of Chinese apps on mobile phone,BJPPolicyChineseApps
+Q13.  F. Decision not to postpone JEE-NEET exam date,BJPPolicyJEENEEET
+Q13. G. Imposition of sudden lockdown that led to massive reverse migration,BJPPolicyLockdown
+Q13. H. Handling of Coronavirus,BJPPolicyCovid
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14A. Narendra Modi,PerformanceLeaderModi
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14 B. Rahul Gandhi,PerformanceLeaderGandhi
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14 C. Tejaswi Yadav,PerformanceLeaderYadav
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14 D. Nitish Kumar,PerformanceLeaderKumar
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14 E. Jitan Ram Manjhi,PerformanceLeaderMajhi
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14 F. Sushil Modi,PerformanceLeaderSushilModi
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14 G. ChiragPaswan,PerformanceLeaderPaswan
+Q14. How would you rate the past performance of these party leaders/candidates on a five-point scale. 14 H. Upendra Kushwaha,PerformanceLeaderKushwaha
+Q15.How would you rate the past performance of these political parties on a five-point scale 1. NDA,PerformancePartyNDA
+Q15. How would you rate the past performance of these political parties on a five-point scale 2. UPA/ Mahagathbandhan,PerformancePartyUPA
+Q15.How would you rate the past performance of these political parties on a five-point scale 3. LJP,PerformancePartyLJP
+Q15. How would you rate the past performance of these political parties on a five-point scale 4. Other,PerformancePartyOther
+Q15. How would you rate the past performance of these political parties on a five-point scale 5. Independent,PerformmancePartyInd
+Q16. Which religion do you follow,Religion
+Q17. Which caste group do you belong to any caste group,Caste
+"Q18A. Are you member of any social, cultural or religious organisations",OrganisationMember
+"Q18B. If yes, could you please tell me the name of the organization and the party that it is attached to for example the Seva Dal of the INC, the RSS related to the BJPor others?",OrganisationName
+Q19. What is the year of your birth?,BirthYear
+Q20. What is your monthly household income?,HouseholdIncome
+Q21A. How many groups are you a member of in WhatsApp?,WhatsappGroups
+Q21B. In how many of these groups do you check for messages regularly every day?,WhatsappCheckMessages
+Q21C. What percentage of information you send from your WhatsApp account is political content?,WhatsappSharingPolitical
+Q21D. What percentage of information you send from your WhatsApp account is forwarded content,WhatsappSharingInformation
