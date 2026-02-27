@@ -75,9 +75,9 @@ merged_dat <- merged_dat |>
          PostedNDA = ifelse(PostedNDA %in% c(88, 99), replace_with, PostedNDA),
          PostedUPA = ifelse(PostedUPA %in% c(88, 99), replace_with, PostedUPA),
          RalliesNDA = ifelse(RalliesNDA %in% c(88, 99), replace_with, RalliesNDA),
-         RalliesUPA = ifelse(RalliesUPA %in% c(88, 99), replace_with, RalliesUPA),
-         MeetingsNDA = ifelse(MeetingsNDA %in% c(88, 99), replace_with, MeetingsNDA),
-         MeetingsUPA = ifelse(MeetingsUPA %in% c(88, 99), replace_with, MeetingsUPA)
+         RalliesUPA = ifelse(RalliesUPA %in% c(88, 99), replace_with, RalliesUPA)
+         # MeetingsNDA = ifelse(MeetingsNDA %in% c(88, 99), replace_with, MeetingsNDA),
+         # MeetingsUPA = ifelse(MeetingsUPA %in% c(88, 99), replace_with, MeetingsUPA)
   )
 
 # Impute missing DV values
@@ -87,8 +87,8 @@ vars <- c(
   "CreatedNDA", "CreatedUPA",
   "CommentedNDA", "CommentedUPA",
   "PostedNDA", "PostedUPA",
-  "RalliesNDA", "RalliesUPA",
-  "MeetingsNDA", "MeetingsUPA"
+  "RalliesNDA", "RalliesUPA"
+  # "MeetingsNDA", "MeetingsUPA"
 )
 
 imputed_means <- lapply(vars, function(v) {
@@ -159,7 +159,7 @@ plot_dv <- function(data, base_var) {
                       labels = c("0" = "No Flooding", "1" = "Flooding"))
 }
 
-vars <- c("Recirculated", "Created", "Commented", "Posted", "Rallies", "Meetings")
+vars <- c("Recirculated", "Created", "Commented", "Posted", "Rallies")
 
 plots <- lapply(vars, function(v) plot_dv(merged_dat, v))
 
@@ -265,9 +265,9 @@ rallies_cols <- survey_colnames |>
   filter(str_starts(RenamedColumn, "Rallies")) |>
   pull(RenamedColumn)
 
-meetings_cols <- survey_colnames |> 
-  filter(str_starts(RenamedColumn, "Meetings")) |>
-  pull(RenamedColumn)
+# meetings_cols <- survey_colnames |> 
+#   filter(str_starts(RenamedColumn, "Meetings")) |>
+#   pull(RenamedColumn)
 
 whatsapp_act_cols <- survey_colnames |> 
   filter(str_starts(RenamedColumn, "Whatsapp")) |>
@@ -327,23 +327,23 @@ matched <- matched |>
       CreatedNDA + CreatedUPA +
       CommentedNDA + CommentedUPA +
       PostedNDA + PostedUPA +
-      RalliesNDA + RalliesUPA +
-      MeetingsNDA + MeetingsUPA,
+      RalliesNDA + RalliesUPA,
+      # MeetingsNDA + MeetingsUPA,
     
     NDA_participation = RecirculatedNDA + CreatedNDA +
       CommentedNDA + PostedNDA +
-      RalliesNDA + MeetingsNDA,
+      RalliesNDA, # + MeetingsNDA,
     
     UPA_participation = RecirculatedUPA + CreatedUPA +
       CommentedUPA + PostedUPA +
-      RalliesUPA + MeetingsUPA,
+      RalliesUPA, # + MeetingsUPA,
     
     total_recirculated = RecirculatedNDA + RecirculatedUPA,
     total_created = CreatedNDA + CreatedUPA,
     total_commented = CommentedNDA + CommentedUPA,
     total_posted = PostedNDA + PostedUPA,
-    total_rallies = RalliesNDA + RalliesUPA,
-    total_meetings = MeetingsNDA + MeetingsUPA
+    total_rallies = RalliesNDA + RalliesUPA
+    # total_meetings = MeetingsNDA + MeetingsUPA
   )
 
 t.test(rescale0to1(total_participation) ~ Flooding, data = matched) 
@@ -370,9 +370,9 @@ t.test(rescale0to1(total_rallies) ~ Flooding, data = matched)
 t.test(rescale0to1(RalliesNDA) ~ Flooding, data = matched) 
 t.test(rescale0to1(RalliesUPA) ~ Flooding, data = matched) 
 
-t.test(rescale0to1(total_meetings) ~ Flooding, data = matched) 
-t.test(rescale0to1(MeetingsNDA) ~ Flooding, data = matched) 
-t.test(rescale0to1(MeetingsUPA) ~ Flooding, data = matched) 
+# t.test(rescale0to1(total_meetings) ~ Flooding, data = matched) 
+# t.test(rescale0to1(MeetingsNDA) ~ Flooding, data = matched) 
+# t.test(rescale0to1(MeetingsUPA) ~ Flooding, data = matched) 
 
 
 # Function to run t-test and extract results
@@ -395,8 +395,8 @@ variables <- c("total_participation", "NDA_participation", "UPA_participation",
                "total_created", "CreatedNDA", "CreatedUPA",
                "total_commented", "CommentedNDA", "CommentedUPA",
                "total_posted", "PostedNDA", "PostedUPA",
-               "total_rallies", "RalliesNDA", "RalliesUPA",
-               "total_meetings", "MeetingsNDA", "MeetingsUPA")
+               "total_rallies", "RalliesNDA", "RalliesUPA")
+               # "total_meetings", "MeetingsNDA", "MeetingsUPA")
 
 # variables <- c("NDA_participation", "UPA_participation",
 #                "RecirculatedNDA", "RecirculatedUPA",
@@ -469,17 +469,17 @@ rallies_all1 <- lm(total_rallies ~ Flooding*VotedLokSabha2019, data = matched_LS
 rallies_NDA1 <- lm(RalliesNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
 rallies_UPA1 <- lm(RalliesUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
 
-meetings_all1 <- lm(total_meetings ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
-meetings_NDA1 <-lm(MeetingsNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
-meetings_UPA1 <- lm(MeetingsUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
+# meetings_all1 <- lm(total_meetings ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
+# meetings_NDA1 <-lm(MeetingsNDA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
+# meetings_UPA1 <- lm(MeetingsUPA ~ Flooding*VotedLokSabha2019, data = matched_LSsubset)
 
 modelsummary(list("Overall participation" = part_all1,
                   "Overall recirculating" = recirc_all1,
                   "Overall creation" = create_all1,
                   "Overall commenting" = comment_all1,
                   "Overall posting" = posted_all1,
-                  "Overall rallies" = rallies_all1,
-                  "Overall meetings" = meetings_all1),
+                  "Overall rallies" = rallies_all1),
+                  # "Overall meetings" = meetings_all1),
              statistic = "{estimate} ({std.error})",
              stars = TRUE,
              output = glue("model output/moderation_loksabha_overall_{match_model$info$method}.docx"))
@@ -489,8 +489,8 @@ modelsummary(list("NDA participation" = part_NDA1,
                   "NDA creation" = create_NDA1,
                   "NDA commenting" = comment_NDA1,
                   "NDA posting" = posted_NDA1,
-                  "NDA rallies" = rallies_NDA1,
-                  "NDA meetings" = meetings_NDA1),
+                  "NDA rallies" = rallies_NDA1),
+                  # "NDA meetings" = meetings_NDA1),
              statistic = "{estimate} ({std.error})",
              stars = TRUE,
              output = glue("model output/moderation_loksabha_BJP_{match_model$info$method}.docx"))
@@ -540,8 +540,8 @@ modelsummary(list("Overall participation" = part_all2,
                   "Overall creation" = create_all2,
                   "Overall commenting" = comment_all2,
                   "Overall posting" = posted_all2,
-                  "Overall rallies" = rallies_all2,
-                  "Overall meetings" = meetings_all2),
+                  "Overall rallies" = rallies_all2),
+                  # "Overall meetings" = meetings_all2),
              statistic = "{estimate} ({std.error})",
              stars = TRUE,
              output = glue("model output/moderation_assembly_overall_{match_model$info$method}.docx"))
@@ -551,8 +551,8 @@ modelsummary(list("NDA participation" = part_NDA2,
                   "NDA creation" = create_NDA2,
                   "NDA commenting" = comment_NDA2,
                   "NDA posting" = posted_NDA2,
-                  "NDA rallies" = rallies_NDA2,
-                  "NDA meetings" = meetings_NDA2),
+                  "NDA rallies" = rallies_NDA2),
+                  # "NDA meetings" = meetings_NDA2),
              statistic = "{estimate} ({std.error})",
              stars = TRUE,
              output = glue("model output/moderation_assembly_NDA_{match_model$info$method}.docx"))
@@ -562,8 +562,8 @@ modelsummary(list("UPA participation" = part_UPA2,
                   "UPA creation" = create_UPA2,
                   "UPA commenting" = comment_UPA2,
                   "UPA posting" = posted_UPA2,
-                  "UPA rallies" = rallies_UPA2,
-                  "UPA meetings" = meetings_UPA2),
+                  "UPA rallies" = rallies_UPA2),
+                  # "UPA meetings" = meetings_UPA2),
              statistic = "{estimate} ({std.error})",
              stars = TRUE,
              output = glue("model output/moderation_assembly_UPA_{match_model$info$method}.docx"))
