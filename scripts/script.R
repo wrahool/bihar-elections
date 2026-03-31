@@ -500,8 +500,8 @@ modelsummary(list("UPA participation" = part_UPA1,
                   "UPA creation" = create_UPA1,
                   "UPA commenting" = comment_UPA1,
                   "UPA posting" = posted_UPA1,
-                  "UPA rallies" = rallies_UPA1,
-                  "UPA meetings" = meetings_UPA1),
+                  "UPA rallies" = rallies_UPA1),
+                  # "UPA meetings" = meetings_UPA1),
              statistic = "{estimate} ({std.error})",
              stars = TRUE,
              output = glue("model output/moderation_loksabha_UPA_{match_model$info$method}.docx"))
@@ -531,9 +531,9 @@ rallies_all2 <- lm(total_rallies ~ Flooding*VotedAssembly2015, data = matched_LA
 rallies_NDA2 <- lm(RalliesNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
 rallies_UPA2 <- lm(RalliesUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
 
-meetings_all2 <- lm(total_meetings ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
-meetings_NDA2 <-lm(MeetingsNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
-meetings_UPA2 <- lm(MeetingsUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
+# meetings_all2 <- lm(total_meetings ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
+# meetings_NDA2 <-lm(MeetingsNDA ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
+# meetings_UPA2 <- lm(MeetingsUPA ~ Flooding*VotedAssembly2015, data = matched_LAsubset)
 
 modelsummary(list("Overall participation" = part_all2,
                   "Overall recirculating" = recirc_all2,
