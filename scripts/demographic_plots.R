@@ -39,11 +39,11 @@ make_plot <- function(f) {
   return(p)
 }
 
-caste_fig <- make_plot("../demographics/data/caste.csv")
-gender_fig <- make_plot("../demographics/data/gender.csv")
-age_fig <- make_plot("../demographics/data/age.csv")
-religion_fig <- make_plot("../demographics/data/religion.csv")
-votechoice_fig <- make_plot("../demographics/data/vote choice.csv")
+caste_fig <- make_plot("data/demographics/caste.csv")
+gender_fig <- make_plot("data/demographics/gender.csv")
+age_fig <- make_plot("data/demographics/age.csv")
+religion_fig <- make_plot("data/demographics/religion.csv")
+votechoice_fig <- make_plot("data/demographics/vote choice.csv")
 
 combined_plot <- (caste_fig + gender_fig + age_fig + religion_fig + votechoice_fig) + 
   plot_layout(ncol = 2, guides = "collect") +
@@ -54,7 +54,7 @@ combined_plot <- (caste_fig + gender_fig + age_fig + religion_fig + votechoice_f
 combined_plot
 
 ggsave(
-  filename = "../figures/demographic plots.svg", 
+  filename = "figures/demographic plots.svg", 
   plot = combined_plot, 
   device = "svg",
   width = 9,       # Adjust width as needed
