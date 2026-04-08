@@ -57,7 +57,7 @@ ggsave(
   filename = "figures/demographic plots.svg", 
   plot = combined_plot, 
   device = "svg",
-  width = 9,       # Adjust width as needed
-  height = 10,      # Adjust height as needed
+  width = 9, 
+  height = 10,
   units = "in"
 )
