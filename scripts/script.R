@@ -40,6 +40,13 @@ survey_dat$Constituency |> setdiff(flood_dat$Constituency)
 survey_dat <- survey_dat |>
   inner_join(flood_dat, by = 'Constituency')
 
+survey_dat <- survey_dat |>
+  mutate(patna = ifelse(Constituency %in% c("Kumhrar", "Bakhtiarpur", "Patna Sahib",
+                                            "Bankipur", "Phulwari", "Danapur",
+                                            "Digha", "Bikram", "Maner", "Fatuha",
+                                            "Masaurhi", "Paliganj", "Barh", "Mokama"),
+                        1, 0))
+
 survey_dat |> write_csv(glue('{data_folder}//clean-merged-survey-data-revised.csv'))
 
 # correct data entry errors
